@@ -1,0 +1,44 @@
+name: vue
+description: vue — поиск мебели по цвету.
+publish_to: 'none'
+version: 0.2.0+2
+
+environment:
+  sdk: '>=3.5.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  provider: ^6.1.2
+  url_launcher: ^6.3.0
+  image_picker: ^1.1.2
+  animations: ^2.0.11
+  google_fonts: ^6.2.1
+  vector_math: ^2.4.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.3
+
+# Иконка приложения: после flutter pub get выполните
+#   dart run flutter_launcher_icons
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/app_icon.png"
+  remove_alpha_ios: true
+  adaptive_icon_background: "#0A0409"
+  adaptive_icon_foreground: "assets/icon/app_icon_foreground.png"
+  web:
+    generate: true
+    image_path: "assets/icon/app_icon.png"
+    background_color: "#0A0409"
+    theme_color: "#0A0409"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/swallow.png
+    - assets/products/
